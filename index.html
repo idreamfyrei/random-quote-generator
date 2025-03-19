@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Inspiration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="quote-container">
+        <div class="quote-box">
+            <p id="quote">Loading...</p>
+            <h3 id="author"></h3>
+        </div>
+    </div>
+
+    <div class="button-group">
+        <button onclick="getQuote()"><span class="material-icons">refresh</span></button>
+        <button onclick="copyToClipboard()"><span class="material-icons">content_copy</span></button>
+        <button onclick="shareOnTwitter()"><span class="material-icons">share</span></button>
+        <button onclick="exportQuote()"><span class="material-icons">download</span></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eagle Lake", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: radial-gradient(circle, #f2e9ef, #f4e3ef, #f6ddf0, #f7d8f1, #f7d2f2, #f5cef4, #f2caf6, #eec7f8, #e7c5fa, #e0c3fc, #d8c1fd, #cfc0ff);background-image: radial-gradient(circle, #1e161b, #251e23, #2d262b, #352e33, #3d363c, #403840, #433944, #453b48, #423748, #3e3249, #382f4a, #322b4b);
+  text-align: center;
+  padding: 20px;
+}
+
+/* --------Quote Container------- */
+.container {
+  width: 70%;
+  min-width: 300px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(102, 82, 39, 0.2);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+}
+
+.quote-box {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+p {
+  color: #ede5e5;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #ede9e0;
+}
+
+/*--------- button------------- */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+button:hover {
+  background: #555;
+}
+
+.material-icons {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .material-icons {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+
+  .button-group {
+    gap: 5px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+}
