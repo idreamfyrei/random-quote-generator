@@ -18,9 +18,11 @@ const images = [
   "assets/image13.jpg",
 ];
 
-//get random image
+//get random image, preloading image as it created delay when deployed
 function getRandomImage() {
-  return images[Math.floor(Math.random() * images.length)];
+  const img = new Image();
+  img.src = images[Math.floor(Math.random() * images.length)];
+  return img.src;
 }
 
 //get random quote
